@@ -1,9 +1,9 @@
 /* Reset básico */
 body {
-    font-family: 'Orbitron', sans-serif; 
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
     margin: 0;
     padding: 0;
-    background: linear-gradient(145deg, #000428, #004e92); 
+    background: linear-gradient(145deg, #000428, #004e92); /* Gradiente galáctico */
     color: #ffffff;
     background-image: url('https://source.unsplash.com/1920x1080/?galaxy,stars'); /* Fundo de galáxia */
     background-size: cover;
@@ -22,7 +22,7 @@ body {
   header h1 {
     margin: 0;
     font-size: 2.5rem;
-    color: #00d4ff; 
+    color: #00d4ff; /* Cor ciano brilhante */
     text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
   }
   
@@ -106,6 +106,50 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 212, 255, 0.8);
   }
   
+  /* Modal de Detalhes */
+  #modalDetalhes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto; /* Habilita rolagem vertical */
+    padding: 20px; /* Espaço para evitar que o conteúdo encoste nas bordas */
+  }
+  
+  .modal-content {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Garante que não haja scroll interno na div */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #fecharModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
   /* Responsividade */
   @media (max-width: 768px) {
     header input {
@@ -116,5 +160,47 @@ body {
       width: 100%;
       max-width: 300px;
     }
+  
+    #filmes {
+      gap: 10px;
+    }
+  
+    .modal-content {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
   }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header input {
+      width: 100%;
+    }
+  
+    .movie {
+      width: 90%;
+      max-width: 280px;
+    }
+  
+    .modal-content img {
+      margin-top: 10px;
+    }
+  
+    #fecharModal {
+      font-size: 1.2rem;
+    }
+  }
+  
   
