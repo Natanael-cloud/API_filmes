@@ -1,4 +1,4 @@
-const CHAVE_API = bb9343bd26b125f4e385ae717cf72b11; 
+const CHAVE_API = 'bb9343bd26b125f4e385ae717cf72b11'; 
 const URL_BASE = 'https://api.themoviedb.org/3';
 const campoPesquisa = document.getElementById('pesquisa');
 const botaoPesquisa = document.getElementById('botaoPesquisa');
