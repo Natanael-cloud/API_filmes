@@ -1,0 +1,120 @@
+/* Reset básico */
+body {
+    font-family: 'Orbitron', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #000428, #004e92); 
+    color: #ffffff;
+    background-image: url('https://source.unsplash.com/1920x1080/?galaxy,stars'); /* Fundo de galáxia */
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00d4ff; 
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+  
+  header input {
+    padding: 10px;
+    margin: 10px 5px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    box-shadow: inset 0 0 5px #00d4ff;
+  }
+  
+  header button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #00d4ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+  
+  header button:hover {
+    background-color: #0088cc;
+    color: white;
+  }
+  
+  /* Container de filmes */
+  main {
+    padding: 20px;
+  }
+  
+  #filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Cartões de filmes */
+  .movie {
+    background: rgba(0, 0, 0, 0.8); /* Fundo transparente */
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 212, 255, 0.5);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #ffffff;
+  }
+  
+  .movie img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  .movie h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+  }
+  
+  .movie p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  .movie:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 212, 255, 0.8);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header input {
+      width: 90%;
+    }
+  
+    .movie {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
